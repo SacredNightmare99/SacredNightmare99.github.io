@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Game</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="score">
+      <p>Score: <span id="playerX">0</span> - <span id="playerO">0</span></p>
+    </div>
+    <div id="turn-indicator">
+      <p>Current Turn: <span id="current-turn"></span></p>
+    </div>
+    <div class="game-container">
+        <table>
+            <tr>
+              <td data-row="0" data-col="0"></td>
+              <td data-row="0" data-col="1"></td>
+              <td data-row="0" data-col="2"></td>
+            </tr>
+            <tr>
+              <td data-row="1" data-col="0"></td>
+              <td data-row="1" data-col="1"></td>
+              <td data-row="1" data-col="2"></td>
+            </tr>
+            <tr>
+              <td data-row="2" data-col="0"></td>
+              <td data-row="2" data-col="1"></td>
+              <td data-row="2" data-col="2"></td>
+            </tr>
+        </table>
+        <button id="reset-button" onclick="reset()">Reset</button>
+    </div>
+  </main>
+</body>
+</html>
